@@ -23,6 +23,13 @@ func denyCommand(ctx context.Context) cli.Command {
 			actions.EmailCommand(ctx),
 			actions.IPCommand(ctx),
 			actions.URICommand(ctx),
+			// Enhanced URI constraints with scheme/path support
+			actions.URIConstraintCommand(ctx),
+			// Regex pattern commands
+			actions.DNSRegexCommand(ctx),
+			actions.EmailRegexCommand(ctx),
+			actions.URIRegexCommand(ctx),
+			actions.CommonNameRegexCommand(ctx),
 		},
 	}
 }

@@ -21,6 +21,9 @@ func allowCommand(ctx context.Context) cli.Command {
 			actions.DNSCommand(ctx),
 			actions.EmailCommand(ctx),
 			actions.PrincipalsCommand(ctx),
+			// Regex pattern commands
+			actions.DNSRegexCommand(ctx),
+			actions.PrincipalRegexCommand(ctx),
 		},
 	}
 }

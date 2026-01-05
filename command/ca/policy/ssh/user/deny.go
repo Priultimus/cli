@@ -20,6 +20,9 @@ func denyCommand(ctx context.Context) cli.Command {
 		Subcommands: cli.Commands{
 			actions.EmailCommand(ctx),
 			actions.PrincipalsCommand(ctx),
+			// Regex pattern commands
+			actions.EmailRegexCommand(ctx),
+			actions.PrincipalRegexCommand(ctx),
 		},
 	}
 }
